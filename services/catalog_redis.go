@@ -32,7 +32,7 @@ func (s catalogServiceRedis) GetProducts() (products []Product, err error) {
 		}
 	}
 
-	//Query from database
+	//repositories
 	productsDB, err := s.productRepo.GetProducts()
 	if err != nil {
 		return nil, err
