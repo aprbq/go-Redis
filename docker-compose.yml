@@ -39,8 +39,8 @@ services:
     image: postgres:16
     container_name: postgres
     environment:
-      - POSTGRES_PASSWORD=kook0990
-      - POSTGRES_DB=infinitas
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
     ports:
       - "5433:5432"
     volumes:
